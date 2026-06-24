@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/services/layout,_N_T_/services/balance-and-fall-prevention-training/layout,_N_T_/services/balance-and-fall-prevention-training/page,_N_T_/services/balance-and-fall-prevention-training"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/services/balance-and-fall-prevention-training/__PAGE__",
+    "/services/balance-and-fall-prevention-training",
+    "/services",
+    "/_index",
+    "/_head"
+  ]
+}

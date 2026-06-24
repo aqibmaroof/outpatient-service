@@ -1,0 +1,23 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/conditions-we-treat/page": "/conditions-we-treat",
+  "/contact/page": "/contact",
+  "/direct-access-and-referrals/page": "/direct-access-and-referrals",
+  "/favicon.ico/route": "/favicon.ico",
+  "/home-exercise-programs/page": "/home-exercise-programs",
+  "/insurance-and-billing/page": "/insurance-and-billing",
+  "/new-patient-information/page": "/new-patient-information",
+  "/our-therapists/page": "/our-therapists",
+  "/page": "/",
+  "/privacy-policy/page": "/privacy-policy",
+  "/services/balance-and-fall-prevention-training/page": "/services/balance-and-fall-prevention-training",
+  "/services/chronic-pain-management/page": "/services/chronic-pain-management",
+  "/services/hands-on-manual-therapy/page": "/services/hands-on-manual-therapy",
+  "/services/orthopedic-rehabilitation/page": "/services/orthopedic-rehabilitation",
+  "/services/page": "/services",
+  "/services/post-surgical-recovery/page": "/services/post-surgical-recovery",
+  "/services/sports-injury-management/page": "/services/sports-injury-management",
+  "/what-to-expect/page": "/what-to-expect"
+}

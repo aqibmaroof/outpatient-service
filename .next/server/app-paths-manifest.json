@@ -1,0 +1,23 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/conditions-we-treat/page": "app/conditions-we-treat/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/direct-access-and-referrals/page": "app/direct-access-and-referrals/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/home-exercise-programs/page": "app/home-exercise-programs/page.js",
+  "/insurance-and-billing/page": "app/insurance-and-billing/page.js",
+  "/new-patient-information/page": "app/new-patient-information/page.js",
+  "/our-therapists/page": "app/our-therapists/page.js",
+  "/page": "app/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/services/balance-and-fall-prevention-training/page": "app/services/balance-and-fall-prevention-training/page.js",
+  "/services/chronic-pain-management/page": "app/services/chronic-pain-management/page.js",
+  "/services/hands-on-manual-therapy/page": "app/services/hands-on-manual-therapy/page.js",
+  "/services/orthopedic-rehabilitation/page": "app/services/orthopedic-rehabilitation/page.js",
+  "/services/page": "app/services/page.js",
+  "/services/post-surgical-recovery/page": "app/services/post-surgical-recovery/page.js",
+  "/services/sports-injury-management/page": "app/services/sports-injury-management/page.js",
+  "/what-to-expect/page": "app/what-to-expect/page.js"
+}

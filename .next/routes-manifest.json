@@ -1,0 +1,171 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/conditions-we-treat",
+      "regex": "^/conditions\\-we\\-treat(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions\\-we\\-treat(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/direct-access-and-referrals",
+      "regex": "^/direct\\-access\\-and\\-referrals(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/direct\\-access\\-and\\-referrals(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/home-exercise-programs",
+      "regex": "^/home\\-exercise\\-programs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home\\-exercise\\-programs(?:/)?$"
+    },
+    {
+      "page": "/insurance-and-billing",
+      "regex": "^/insurance\\-and\\-billing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insurance\\-and\\-billing(?:/)?$"
+    },
+    {
+      "page": "/new-patient-information",
+      "regex": "^/new\\-patient\\-information(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/new\\-patient\\-information(?:/)?$"
+    },
+    {
+      "page": "/our-therapists",
+      "regex": "^/our\\-therapists(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/our\\-therapists(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/services",
+      "regex": "^/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services(?:/)?$"
+    },
+    {
+      "page": "/services/balance-and-fall-prevention-training",
+      "regex": "^/services/balance\\-and\\-fall\\-prevention\\-training(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/balance\\-and\\-fall\\-prevention\\-training(?:/)?$"
+    },
+    {
+      "page": "/services/chronic-pain-management",
+      "regex": "^/services/chronic\\-pain\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/chronic\\-pain\\-management(?:/)?$"
+    },
+    {
+      "page": "/services/hands-on-manual-therapy",
+      "regex": "^/services/hands\\-on\\-manual\\-therapy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/hands\\-on\\-manual\\-therapy(?:/)?$"
+    },
+    {
+      "page": "/services/orthopedic-rehabilitation",
+      "regex": "^/services/orthopedic\\-rehabilitation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/orthopedic\\-rehabilitation(?:/)?$"
+    },
+    {
+      "page": "/services/post-surgical-recovery",
+      "regex": "^/services/post\\-surgical\\-recovery(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/post\\-surgical\\-recovery(?:/)?$"
+    },
+    {
+      "page": "/services/sports-injury-management",
+      "regex": "^/services/sports\\-injury\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/sports\\-injury\\-management(?:/)?$"
+    },
+    {
+      "page": "/what-to-expect",
+      "regex": "^/what\\-to\\-expect(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/what\\-to\\-expect(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
