@@ -107,6 +107,6 @@ ${i}`,html:function({fullName:a,email:b,message:c,submittedAt:d}){let e="#1c9cd6
       </table>
     </body>
   </html>
-  `}({fullName:p,email:h,message:i,submittedAt:q})}),{status:"success",message:"Thanks for reaching out — we'll be in touch shortly."}}catch(a){return console.log("Contact form: failed to send email.",a),{status:"error",message:"Something went wrong while sending your message. Please try again."}}}function g(a){return a.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}(0,d.ensureServerEntryExports)([f]),(0,b.registerServerReference)(f,"605de1459c0b2917805531b04db904b2570b9c7e3e",null),a.s([],12581),a.i(12581),a.s(["605de1459c0b2917805531b04db904b2570b9c7e3e",0,f],27797)}];
+  `}({fullName:p,email:h,message:i,submittedAt:q})}),{status:"success",message:"Thanks for reaching out — we'll be in touch shortly."}}catch(a){return console.log("Contact form: failed to send email.",a),{status:"error",message:"Something went wrong while sending your message. Please try again."}}}function g(a){return a.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}(0,d.ensureServerEntryExports)([f]),(0,b.registerServerReference)(f,"6050dd1b0b348cf97088c1579d9491fe8effac889d",null),a.s([],12581),a.i(12581),a.s(["6050dd1b0b348cf97088c1579d9491fe8effac889d",0,f],27797)}];
 
 //# sourceMappingURL=%5Broot-of-the-server%5D__1vrt4p7._.js.map
