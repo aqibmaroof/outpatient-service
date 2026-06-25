@@ -15,7 +15,7 @@ export default function Header() {
 
       {/* Navigation */}
       <Container>
-        <div className="flex items-center justify-between gap-6 py-6">
+        <div className="flex items-center justify-between pt-3 pb-6">
           <Link href="/">
             <Logo variant="light" />
           </Link>

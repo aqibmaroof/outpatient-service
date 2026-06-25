@@ -7,9 +7,7 @@ const u = (id: string, w: number) =>
 
 export const site = {
   brand: {
-    name: "Restore Physical Therapy",
-    line1: "RESTORE",
-    line2: "PHYSICAL THERAPY",
+    name: "Team Rehab",
   },
 
   phone: "(209) 238-2579",
