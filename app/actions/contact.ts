@@ -31,6 +31,33 @@ export async function sendContactMessage(
     return { status: "error", message: "Please enter a valid email address." };
   }
 
+  // Optional file attachment. The <input type="file"> rides along in the
+  // FormData, so it arrives here as a web File (empty/size 0 when none chosen).
+  const MAX_ATTACHMENT_BYTES = 10 * 1024 * 1024; // 10 MB
+  let attachments:
+    | { filename: string; content: Buffer; contentType: string }[]
+    | undefined;
+  let attachmentName: string | undefined;
+
+  const upload = formData.get("attachment");
+  if (upload instanceof File && upload.size > 0) {
+    if (upload.size > MAX_ATTACHMENT_BYTES) {
+      return {
+        status: "error",
+        message: "Attachment is too large. Please keep it under 10 MB.",
+      };
+    }
+    const content = Buffer.from(await upload.arrayBuffer());
+    attachmentName = upload.name || "attachment";
+    attachments = [
+      {
+        filename: attachmentName,
+        content,
+        contentType: upload.type || "application/octet-stream",
+      },
+    ];
+  }
+
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
 
   if (!SMTP_USER || !SMTP_PASS) {
@@ -66,8 +93,11 @@ export async function sendContactMessage(
       to: TO_EMAIL,
       replyTo: `"${fullName}" <${email}>`,
       subject: `New contact message from ${fullName}`,
-      text: `New contact form submission\n\nName: ${fullName}\nEmail: ${email}\nSubmitted: ${submittedAt}\n\nMessage:\n${message}`,
-      html: renderEmail({ fullName, email, message, submittedAt }),
+      text: `New contact form submission\n\nName: ${fullName}\nEmail: ${email}\nSubmitted: ${submittedAt}${
+        attachmentName ? `\nAttachment: ${attachmentName}` : ""
+      }\n\nMessage:\n${message}`,
+      html: renderEmail({ fullName, email, message, submittedAt, attachmentName }),
+      attachments,
     });
 
     return {
@@ -89,11 +119,13 @@ function renderEmail({
   email,
   message,
   submittedAt,
+  attachmentName,
 }: {
   fullName: string;
   email: string;
   message: string;
   submittedAt: string;
+  attachmentName?: string;
 }) {
   const brand = "#1c9cd6";
   const brandDark = "#1683b3";
@@ -175,7 +207,16 @@ function renderEmail({
                       <td style="padding:0 24px 14px;">
                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                           ${infoRow("Email Address", `<a href="mailto:${safeEmail}" style="color:${brandDark};text-decoration:none;">${safeEmail}</a>`)}
-                          ${infoRow("Received", submittedAt, true)}
+                          ${infoRow("Received", submittedAt, !attachmentName)}
+                          ${
+                            attachmentName
+                              ? infoRow(
+                                  "Attachment",
+                                  `📎 ${escapeHtml(attachmentName)} <span style="color:#94a3b8;font-weight:normal;">(see attached file)</span>`,
+                                  true,
+                                )
+                              : ""
+                          }
                         </table>
                       </td>
                     </tr>

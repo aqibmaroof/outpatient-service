@@ -1,6 +1,9 @@
 // Central content + assets for the Restore Physical Therapy site.
-// All photos are free Unsplash stock — swap the IDs (or drop files in /public)
-// to use the clinic's own images.
+// Photos are the clinic's own, stored in /public/images and referenced with img().
+// `u()` (Unsplash) remains only for the therapist portrait grid until real
+// staff headshots are supplied — see the `team` block below.
+
+const img = (name: string) => `/images/${name}`;
 
 const u = (id: string, w: number) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=70`;
@@ -30,21 +33,22 @@ export const site = {
   ],
 
   images: {
-    homeHero: u("photo-1504439468489-c8920d796a29", 1920),
-    aboutHero: u("photo-1582750433449-648ed127bb54", 1920),
-    servicesHero: u("photo-1551601651-2a8555f1a136", 1920),
-    contactHero: u("photo-1586773860418-d37222d8fce3", 1920),
-    assistance: u("photo-1632833239869-a37e3a5806d2", 1920),
-    aboutBuilding: u("photo-1586773860418-d37222d8fce3", 1000),
-    whyChoose: u("photo-1586773860418-d37222d8fce3", 1000),
-    aboutLobby: u("photo-1519494026892-80bbd2d6fd0d", 1600),
-    svcConsult: u("photo-1631217868264-e5b90bb7e133", 800),
-    svcCounseling: u("photo-1573497019940-1c28c88b4f3e", 800),
-    svcFamily: u("photo-1559839734-2b71ea197ec2", 800),
-    svcInpatient: u("photo-1538108149393-fbbd81895907", 800),
-    svcPathology: u("photo-1579165466949-3180a3d056d5", 800),
-    svcImaging: u("photo-1666214280557-f1b5022eb634", 800),
-    svcInternal: u("photo-1530026405186-ed1f139313f8", 800),
+    homeHero: img("gym-01.jpg"),
+    aboutHero: img("gym-03.jpg"),
+    servicesHero: img("gym-02.jpg"),
+    contactHero: img("gym-04.jpg"),
+    assistance: img("gym-05.jpg"),
+    aboutBuilding: img("gym-07.jpg"),
+    whyChoose: img("equipment-01.jpg"),
+    aboutLobby: img("gym-14.jpg"),
+    svcConsult: img("treatment-01.jpg"),
+    svcCounseling: img("room-01.jpg"),
+    svcFamily: img("treatment-02.jpg"),
+    svcInpatient: img("gym-08.jpg"),
+    svcPathology: img("room-02.jpg"),
+    svcImaging: img("equipment-02.jpg"),
+    svcInternal: img("front-desk.jpg"),
+    // TODO: replace with real staff headshots — see `team` below.
     team1: u("photo-1622253692010-333f2da6031d", 600),
     team2: u("photo-1594824476967-48c8b964273f", 600),
     team3: u("photo-1612349317150-e413f6a5b16d", 600),
@@ -78,19 +82,19 @@ export const site = {
     {
       title: "Orthopedic Rehabilitation",
       text: "Targeted treatment for injuries and conditions affecting muscles, joints, and bones — restoring strength, flexibility, and pain-free movement.",
-      image: u("photo-1631217868264-e5b90bb7e133", 800),
+      image: img("treatment-01.jpg"),
       href: "/services",
     },
     {
       title: "Post-Surgical Recovery",
       text: "Guided rehabilitation after surgery to help you rebuild function safely, regain range of motion, and return to daily life with confidence.",
-      image: u("photo-1573497019940-1c28c88b4f3e", 800),
+      image: img("room-01.jpg"),
       href: "/services",
     },
     {
       title: "Sports Injury Management",
       text: "Comprehensive care for athletes of every level — from injury recovery to performance training that helps you get back in the game stronger.",
-      image: u("photo-1559839734-2b71ea197ec2", 800),
+      image: img("gym-16.jpg"),
       href: "/services",
     },
   ],
@@ -186,42 +190,42 @@ export const site = {
       slug: "orthopedic-rehabilitation",
       title: "Orthopedic Rehabilitation",
       text: "Our therapists provide targeted treatment for injuries and conditions affecting the muscles, joints, ligaments, and bones. Through individualized programs, we help restore strength, flexibility, and pain-free movement so you can return to the activities you love.",
-      image: u("photo-1631217868264-e5b90bb7e133", 800),
+      image: img("treatment-02.jpg"),
       href: "/services/orthopedic-rehabilitation",
     },
     {
       slug: "post-surgical-recovery",
       title: "Post-Surgical Recovery",
       text: "Recovering from surgery requires careful, expert guidance. Our team designs structured rehabilitation plans that rebuild function safely, restore range of motion, and help you regain independence and confidence every step of the way.",
-      image: u("photo-1573497019940-1c28c88b4f3e", 800),
+      image: img("room-02.jpg"),
       href: "/services/post-surgical-recovery",
     },
     {
       slug: "sports-injury-management",
       title: "Sports Injury Management",
       text: "Whether you're a weekend warrior or a competitive athlete, our therapists treat sports-related injuries and help prevent re-injury. We combine rehabilitation with performance-focused training to get you back in the game stronger and safer.",
-      image: u("photo-1538108149393-fbbd81895907", 800),
+      image: img("gym-09.jpg"),
       href: "/services/sports-injury-management",
     },
     {
       slug: "balance-and-fall-prevention-training",
       title: "Balance & Fall Prevention Training",
       text: "Our balance training programs help patients improve stability, coordination, and confidence in movement. Ideal for those recovering from injury or managing age-related changes, this care reduces fall risk and supports safe, independent living.",
-      image: u("photo-1579165466949-3180a3d056d5", 800),
+      image: img("equipment-01.jpg"),
       href: "/services/balance-and-fall-prevention-training",
     },
     {
       slug: "hands-on-manual-therapy",
       title: "Hands-On Manual Therapy",
       text: "Our licensed therapists use skilled hands-on techniques — including joint mobilization, soft-tissue work, and stretching — to relieve pain, improve circulation, and restore movement in stiff or injured areas of the body.",
-      image: u("photo-1666214280557-f1b5022eb634", 800),
+      image: img("treatment-03.jpg"),
       href: "/services/hands-on-manual-therapy",
     },
     {
       slug: "chronic-pain-management",
       title: "Chronic Pain Management",
       text: "Living with persistent pain can limit every part of life. We create individualized treatment plans that combine advanced therapeutic techniques and movement strategies to reduce pain, improve function, and enhance your overall quality of life.",
-      image: u("photo-1530026405186-ed1f139313f8", 800),
+      image: img("gym-13.jpg"),
       href: "/services/chronic-pain-management",
     },
   ],
@@ -302,7 +306,7 @@ export const site = {
   infoPages: {
     "new-patient-information": {
       title: "New Patient Information",
-      image: u("photo-1519494026892-80bbd2d6fd0d", 1920),
+      image: img("gym-06.jpg"),
       intro:
         "Everything you need to feel prepared and confident before your very first visit to Restore Physical Therapy.",
       sections: [
@@ -322,7 +326,7 @@ export const site = {
     },
     "what-to-expect": {
       title: "What to Expect",
-      image: u("photo-1631217868264-e5b90bb7e133", 1920),
+      image: img("treatment-01.jpg"),
       intro:
         "From your first evaluation to your final session, here's how care works at Restore Physical Therapy.",
       sections: [
@@ -342,7 +346,7 @@ export const site = {
     },
     "insurance-and-billing": {
       title: "Insurance & Billing",
-      image: u("photo-1530026405186-ed1f139313f8", 1920),
+      image: img("front-desk.jpg"),
       intro:
         "Transparent, straightforward billing so you can focus on your recovery.",
       sections: [
@@ -362,7 +366,7 @@ export const site = {
     },
     "home-exercise-programs": {
       title: "Home Exercise Programs",
-      image: u("photo-1559839734-2b71ea197ec2", 1920),
+      image: img("equipment-02.jpg"),
       intro:
         "Keep your recovery moving forward between visits with a program designed just for you.",
       sections: [
@@ -382,7 +386,7 @@ export const site = {
     },
     "conditions-we-treat": {
       title: "Conditions We Treat",
-      image: u("photo-1551601651-2a8555f1a136", 1920),
+      image: img("gym-10.jpg"),
       intro:
         "Our licensed therapists help patients overcome a wide range of injuries and conditions.",
       sections: [
@@ -402,7 +406,7 @@ export const site = {
     },
     "direct-access-and-referrals": {
       title: "Direct Access & Referrals",
-      image: u("photo-1586773860418-d37222d8fce3", 1920),
+      image: img("gym-11.jpg"),
       intro:
         "Understand how to begin physical therapy — with or without a physician referral.",
       sections: [
@@ -422,7 +426,7 @@ export const site = {
     },
     "privacy-policy": {
       title: "Privacy Policy",
-      image: u("photo-1582750433449-648ed127bb54", 1920),
+      image: img("gym-12.jpg"),
       intro:
         "How Restore Physical Therapy collects, uses, and protects your information.",
       sections: [

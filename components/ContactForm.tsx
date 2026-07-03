@@ -94,6 +94,23 @@ export default function ContactForm() {
           />
         </div>
 
+        <div>
+          <label htmlFor="attachment" className={labelClass}>
+            Attach a document{" "}
+            <span className="font-normal text-slate-400">(optional)</span>
+          </label>
+          <input
+            id="attachment"
+            name="attachment"
+            type="file"
+            accept=".pdf,.doc,.docx,.txt,.rtf,.png,.jpg,.jpeg,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png,image/jpeg,text/plain,application/rtf"
+            className="mt-2 block w-full text-sm text-slate-500 file:mr-4 file:cursor-pointer file:rounded-md file:border-0 file:bg-brand file:px-4 file:py-2 file:text-sm file:font-medium file:text-white hover:file:bg-brand-dark"
+          />
+          <p className="mt-1 text-xs text-slate-400">
+            PDF, Word, image, or text file up to 10&nbsp;MB.
+          </p>
+        </div>
+
         <button
           type="submit"
           disabled={isPending}

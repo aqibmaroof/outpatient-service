@@ -54,11 +54,11 @@ export default function Contact() {
 
               <div>
                 <h2 className="text-xl font-bold text-ink">Office Hours</h2>
-                <dl className="mt-3 space-y-2">
+                <dl className="mt-3 space-y-6">
                   {site.officeHours.map((entry) => (
                     <div
                       key={entry.day}
-                      className="flex justify-between gap-4 border-b border-slate-200 pb-2 text-sm"
+                      className="flex justify-between gap-4 border-b border-slate-200 pb-6 text-sm"
                     >
                       <dt className="text-slate-500">{entry.day}</dt>
                       <dd className="font-medium text-ink">{entry.time}</dd>
