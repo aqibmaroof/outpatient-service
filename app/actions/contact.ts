@@ -8,7 +8,7 @@ export type ContactState = {
 };
 
 // Where form submissions are delivered. Override with CONTACT_TO if needed.
-const TO_EMAIL = process.env.CONTACT_TO || "shah@theteamrehab.com";
+const TO_EMAIL = "shah@theteamrehab.com";
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
@@ -58,7 +58,10 @@ export async function sendContactMessage(
     ];
   }
 
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+  const SMTP_HOST = "smtp.gmail.com"
+  const SMTP_PORT = 465
+  const SMTP_USER = "shah@theteamrehab.com"
+  const SMTP_PASS = "hlee uujm kygr ontb"
 
   if (!SMTP_USER || !SMTP_PASS) {
     console.error("Contact form: missing SMTP_USER / SMTP_PASS env vars.");
@@ -93,9 +96,8 @@ export async function sendContactMessage(
       to: TO_EMAIL,
       replyTo: `"${fullName}" <${email}>`,
       subject: `New contact message from ${fullName}`,
-      text: `New contact form submission\n\nName: ${fullName}\nEmail: ${email}\nSubmitted: ${submittedAt}${
-        attachmentName ? `\nAttachment: ${attachmentName}` : ""
-      }\n\nMessage:\n${message}`,
+      text: `New contact form submission\n\nName: ${fullName}\nEmail: ${email}\nSubmitted: ${submittedAt}${attachmentName ? `\nAttachment: ${attachmentName}` : ""
+        }\n\nMessage:\n${message}`,
       html: renderEmail({ fullName, email, message, submittedAt, attachmentName }),
       attachments,
     });
@@ -208,15 +210,14 @@ function renderEmail({
                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                           ${infoRow("Email Address", `<a href="mailto:${safeEmail}" style="color:${brandDark};text-decoration:none;">${safeEmail}</a>`)}
                           ${infoRow("Received", submittedAt, !attachmentName)}
-                          ${
-                            attachmentName
-                              ? infoRow(
-                                  "Attachment",
-                                  `📎 ${escapeHtml(attachmentName)} <span style="color:#94a3b8;font-weight:normal;">(see attached file)</span>`,
-                                  true,
-                                )
-                              : ""
-                          }
+                          ${attachmentName
+      ? infoRow(
+        "Attachment",
+        `📎 ${escapeHtml(attachmentName)} <span style="color:#94a3b8;font-weight:normal;">(see attached file)</span>`,
+        true,
+      )
+      : ""
+    }
                         </table>
                       </td>
                     </tr>
