@@ -8,7 +8,7 @@ export type ContactState = {
 };
 
 // Where form submissions are delivered. Override with CONTACT_TO if needed.
-const TO_EMAIL = process.env.CONTACT_TO || "aqibmaroof786@gmail.com";
+const TO_EMAIL = process.env.CONTACT_TO || "shah@theteamrehab.com";
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
@@ -113,9 +113,8 @@ function renderEmail({
 
   const infoRow = (label: string, value: string, last = false) => `
     <tr>
-      <td style="padding:16px 0;${
-        last ? "" : "border-bottom:1px solid #eef2f6;"
-      }">
+      <td style="padding:16px 0;${last ? "" : "border-bottom:1px solid #eef2f6;"
+    }">
         <p style="margin:0;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#94a3b8;">${label}</p>
         <p style="margin:5px 0 0;font-size:15px;font-weight:bold;color:${ink};">${value}</p>
       </td>
