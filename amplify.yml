@@ -1,0 +1,21 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        # Use `npm install` instead of `npm ci`.
+        # `@tailwindcss/oxide-wasm32-wasi` bundles @emnapi/core/@emnapi/runtime,
+        # which npm omits from package-lock.json (they can't be recorded from a
+        # non-wasm32 host). `npm ci` then fails EUSAGE on those "missing" entries.
+        - npm install --cache .npm --prefer-offline
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .next/cache/**/*
+      - .npm/**/*
