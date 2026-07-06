@@ -16,9 +16,9 @@ export default function Logo({
       <img
         className="h-auto w-50"
         src={
-          comingFor === "footer"
-            ? "https://work-wear-assets.s3.amazonaws.com/products/products/teamrehab_black-291ac37b-3318-45d9-bee0-e91c7358500c.svg"
-            : "https://work-wear-assets.s3.amazonaws.com/products/products/teamrehab-ced4dfef-af96-4b31-bdc0-78c85adba413.svg"
+          comingFor !== "footer"
+            ? "https://work-wear-assets.s3.amazonaws.com/products/products/teamrehab_physical_therapy_logo_white-ed2dd4d7-ea08-42dd-a7aa-d96f9e0e3271.png"
+            : "https://work-wear-assets.s3.amazonaws.com/products/products/teamrehab_physical_therapy_logo_black-63b0d668-b8d6-4e57-bf7c-999eab4dd713.png"
         }
         alt={site.brand.name}
       />
