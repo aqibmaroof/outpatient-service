@@ -84,7 +84,6 @@ export default function Contact() {
           referrerPolicy="no-referrer-when-downgrade"
           className="absolute inset-0 h-full w-full border-0"
         />
-      
       </section>
     </>
   );
