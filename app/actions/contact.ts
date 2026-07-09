@@ -8,7 +8,7 @@ export type ContactState = {
 };
 
 // Where form submissions are delivered. Override with CONTACT_TO if needed.
-const TO_EMAIL = "shah@theteamrehab.com";
+const TO_EMAIL = "aqibmaroof786@gmail.com";
 
 function isEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
@@ -60,8 +60,8 @@ export async function sendContactMessage(
 
   const SMTP_HOST = "smtp.gmail.com"
   const SMTP_PORT = 465
-  const SMTP_USER = "shah@theteamrehab.com"
-  const SMTP_PASS = "hlee uujm kygr ontb"
+  const SMTP_USER = "aqibmaroof786@gmail.com"
+  const SMTP_PASS = "bwwd ksfg jbtj gigj"
 
   if (!SMTP_USER || !SMTP_PASS) {
     console.error("Contact form: missing SMTP_USER / SMTP_PASS env vars.");
