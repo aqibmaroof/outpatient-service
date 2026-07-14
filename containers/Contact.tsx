@@ -58,7 +58,7 @@ export default function Contact() {
                   {site.officeHours.map((entry) => (
                     <div
                       key={entry.day}
-                      className="flex justify-between gap-4 border-b border-slate-200 pb-6 text-sm"
+                      className="flex justify-between gap-4 border-b border-slate-200 pb-6 mt-7 text-sm"
                     >
                       <dt className="text-slate-500">{entry.day}</dt>
                       <dd className="font-medium text-ink">{entry.time}</dd>

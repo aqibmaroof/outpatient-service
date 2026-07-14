@@ -20,8 +20,7 @@ export const site = {
 
   // Clinic opening hours shown on the Contact page.
   officeHours: [
-    { day: "Monday – Thursday", time: "8:00 AM – 6:00 PM" },
-    { day: "Friday", time: "8:00 AM – 4:00 PM" },
+    { day: "Monday – Friday", time: "9:00 AM – 5:00 PM" },
     { day: "Saturday – Sunday", time: "Closed" },
   ],
 
