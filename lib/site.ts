@@ -15,7 +15,7 @@ export const site = {
 
   phone: "(209) 238-2579",
   faxNumber: "(209) 244-9181",
-  email: "Hr@theteamrehab.com",
+  email: "Refferals@theteamrehab.com",
   address: "571 Stanislaus Ave. Suite F. Angels Camp. CA. 95222.",
 
   // Clinic opening hours shown on the Contact page.
@@ -297,7 +297,7 @@ export const site = {
     {
       title: "Email",
       detail: "Prefer to write? Reach our team and we'll get back to you promptly.",
-      value: "Hr@theteamrehab.com",
+      value: "Refferals@theteamrehab.com",
       kind: "email",
     },
   ],
