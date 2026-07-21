@@ -102,7 +102,7 @@ export default function Home() {
         <Container>
           <SectionHeader
             eyebrow="OUR SERVICES"
-            title="Comprehensive Physical Therapy"
+            title="Comprehensive Team Rehab Services"
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {site.homeServices.map((service) => (

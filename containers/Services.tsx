@@ -21,7 +21,7 @@ export default function Services() {
         <Container>
           <SectionHeader
             eyebrow="INDIVIDUALIZED CARE"
-            title="Comprehensive Physical Therapy Services"
+            title="Comprehensive Team Rehab Services"
           />
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {site.services.map((service) => (

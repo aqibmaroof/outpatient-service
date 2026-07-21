@@ -227,6 +227,13 @@ export const site = {
       image: img("gym-13.jpg"),
       href: "/services/chronic-pain-management",
     },
+    {
+      slug: "neuropathy-treatment",
+      title: "Neuropathy Treatment",
+      text: "Numbness, tingling, and nerve pain can make everyday movement difficult. Our therapists use targeted techniques to improve circulation, reduce discomfort, and rebuild sensation and strength, helping you regain balance, mobility, and confidence.",
+      image: img("treatment-02.jpg"),
+      href: "/services/neuropathy-treatment",
+    },
   ],
 
   // Services page — secondary text-only links.
