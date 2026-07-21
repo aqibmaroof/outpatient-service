@@ -13,7 +13,7 @@ export default function Services() {
       <PageHero
         title="Our Services"
         image={site.images.servicesHero}
-        alt="Physical therapist working with a patient at Restore Physical Therapy"
+        alt="Physical therapist working with a patient at Team Rehab"
       />
 
       {/* Service cards */}

@@ -11,7 +11,7 @@ export default function OurTherapists() {
       <PageHero
         title={site.therapistsPage.title}
         image={site.images.aboutHero}
-        alt="The licensed physical therapists at Restore Physical Therapy"
+        alt="The licensed physical therapists at Team Rehab"
       />
 
       <section className="py-20">

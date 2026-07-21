@@ -92,7 +92,7 @@ export async function sendContactMessage(
   try {
     await transporter.sendMail({
       // Must be the authenticated mailbox for most providers (e.g. Gmail).
-      from: `"Restore Physical Therapy" <${SMTP_USER}>`,
+      from: `"Team Rehab" <${SMTP_USER}>`,
       to: TO_EMAIL,
       replyTo: `"${fullName}" <${email}>`,
       subject: `New contact message from ${fullName}`,
@@ -182,7 +182,7 @@ function renderEmail({
                   </table>
                   <p style="margin:22px 0 0;display:inline-block;padding:5px 14px;background-color:${brand}14;color:${brandDark};font-size:11px;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;border-radius:999px;">New Message</p>
                   <h1 style="margin:16px 0 6px;font-size:24px;line-height:1.3;color:${ink};font-weight:bold;">You've got a new inquiry</h1>
-                  <p style="margin:0;font-size:14px;line-height:1.6;color:#64748b;">Submitted through the Restore Physical Therapy website.</p>
+                  <p style="margin:0;font-size:14px;line-height:1.6;color:#64748b;">Submitted through the Team Rehab website.</p>
                 </td>
               </tr>
 
@@ -247,7 +247,7 @@ function renderEmail({
               <!-- Footer -->
               <tr>
                 <td align="center" style="padding:24px 32px;background-color:#f8fafc;border-top:1px solid #eef2f6;">
-                  <p style="margin:0;font-size:14px;font-weight:bold;color:${brandDark};letter-spacing:1px;">RESTORE PHYSICAL THERAPY</p>
+                  <p style="margin:0;font-size:14px;font-weight:bold;color:${brandDark};letter-spacing:1px;">Team Rehab</p>
                   <p style="margin:8px 0 0;font-size:12px;line-height:1.7;color:#94a3b8;">571 Stanislaus Ave. Suite F. Angels Camp. CA. 95222.<br />This is an automated notification from your website contact form — reply directly to respond to ${safeName}.</p>
                 </td>
               </tr>

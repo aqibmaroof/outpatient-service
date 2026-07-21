@@ -10,7 +10,7 @@ export default function About() {
       <PageHero
         title="About Us"
         image={site.images.aboutHero}
-        alt="A licensed physical therapist at Restore Physical Therapy"
+        alt="A licensed physical therapist at Team Rehab"
       />
 
       {/* Intro */}
@@ -23,7 +23,7 @@ export default function About() {
           <div className="relative mt-10 aspect-[16/7] w-full overflow-hidden rounded-lg">
             <Image
               src={site.images.aboutLobby}
-              alt="Restore Physical Therapy clinic and treatment space"
+              alt="Team Rehab clinic and treatment space"
               fill
               sizes="100vw"
               className="object-cover"

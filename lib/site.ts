@@ -1,4 +1,4 @@
-// Central content + assets for the Restore Physical Therapy site.
+// Central content + assets for the Team Rehab site.
 // Photos are the clinic's own, stored in /public/images and referenced with img().
 // `u()` (Unsplash) remains only for the therapist portrait grid until real
 // staff headshots are supplied — see the `team` block below.
@@ -307,7 +307,7 @@ export const site = {
       title: "New Patient Information",
       image: img("gym-06.jpg"),
       intro:
-        "Everything you need to feel prepared and confident before your very first visit to Restore Physical Therapy.",
+        "Everything you need to feel prepared and confident before your very first visit to Team Rehab.",
       sections: [
         {
           heading: "Before Your First Visit",
@@ -327,7 +327,7 @@ export const site = {
       title: "What to Expect",
       image: img("treatment-01.jpg"),
       intro:
-        "From your first evaluation to your final session, here's how care works at Restore Physical Therapy.",
+        "From your first evaluation to your final session, here's how care works at Team Rehab.",
       sections: [
         {
           heading: "Comprehensive Evaluation",
@@ -431,7 +431,7 @@ export const site = {
       title: "Privacy Policy",
       image: img("gym-12.jpg"),
       intro:
-        "How Restore Physical Therapy collects, uses, and protects your information.",
+        "How Team Rehab collects, uses, and protects your information.",
       sections: [
         {
           heading: "Information We Collect",

@@ -9,7 +9,7 @@ export default function Contact() {
       <PageHero
         title="Contact"
         image={site.images.contactHero}
-        alt="Restore Physical Therapy clinic exterior"
+        alt="Team Rehab clinic exterior"
       />
 
       {/* Contact details + map card */}
