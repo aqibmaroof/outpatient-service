@@ -401,6 +401,10 @@ export const site = {
           heading: "Chronic Pain & Balance Disorders",
           body: "We help manage persistent pain and address balance, coordination, and mobility challenges to reduce fall risk and restore confident movement.",
         },
+        {
+          heading: "Neuropathy",
+          body: "We treat nerve-related conditions causing numbness, tingling, or weakness in the hands and feet, using targeted therapy to reduce symptoms and improve balance.",
+        },
       ],
     },
     "direct-access-and-referrals": {

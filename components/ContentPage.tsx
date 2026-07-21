@@ -1,6 +1,8 @@
+"use client";
 import Container from "./Container";
 import PageHero from "./PageHero";
 import AssistanceBand from "./AssistanceBand";
+import { usePathname } from "next/navigation";
 
 type Section = { heading: string; body: string };
 
@@ -15,6 +17,8 @@ export default function ContentPage({
     sections: readonly Section[];
   };
 }) {
+  const pathname = usePathname();
+
   return (
     <>
       <PageHero title={page.title} image={page.image} alt={page.title} />
@@ -25,7 +29,9 @@ export default function ContentPage({
             {page.intro}
           </p>
 
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div
+            className={`mt-12 grid gap-8 ${pathname === "/conditions-we-treat" ? "md:grid-cols-2" : "md:grid-cols-3"}`}
+          >
             {page.sections.map((section) => (
               <div
                 key={section.heading}
