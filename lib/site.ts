@@ -8,10 +8,18 @@ const img = (name: string) => `/images/${name}`;
 const u = (id: string, w: number) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=70`;
 
+// Canonical origin, used for sitemap.xml / robots.txt absolute URLs.
+// Override per environment with NEXT_PUBLIC_SITE_URL (no trailing slash).
+const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.theteamrehab.com"
+).replace(/\/$/, "");
+
 export const site = {
   brand: {
     name: "Team Rehab",
   },
+
+  url: siteUrl,
 
   phone: "(209) 238-2579",
   faxNumber: "(209) 244-9181",
