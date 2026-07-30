@@ -16,7 +16,7 @@ const siteUrl = (
 
 export const site = {
   brand: {
-    name: "Team Rehab",
+    name: "Team Rehab in Angels Camp, CA",
   },
 
   url: siteUrl,
