@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://theteamrehab.com"),
+  metadataBase: new URL("https://www.theteamrehab.com"),
   title: site.brand.name,
   description:
     "Outpatient physical therapy clinic helping you regain mobility, reduce pain, and improve your quality of life through individualized, patient-centered care.",
