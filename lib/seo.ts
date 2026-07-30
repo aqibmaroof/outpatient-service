@@ -29,7 +29,6 @@ export function pageMetadata({
   return {
     title,
     description,
-    alternates: { canonical: path },
     openGraph: {
       title: `${title} | ${site.brand.name}`,
       description,
