@@ -17,13 +17,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.theteamrehab.com"),
-  title: site.brand.name,
+  // `template` applies to child segments only — app/page.tsx is the same
+  // segment as this layout, so the home page sets its own absolute title.
+  title: {
+    default: site.brand.name,
+    template: `%s | ${site.brand.name}`,
+  },
   description:
     "Outpatient physical therapy clinic helping you regain mobility, reduce pain, and improve your quality of life through individualized, patient-centered care.",
   verification: {
     google: "6dGG118vQ2VeVNdeaZJZZRnTek9wjdkMJW9altDWhSE",
   },
-   alternates: { canonical: 'https://www.theteamrehab.com/' },
 };
 
 export default function RootLayout({
@@ -36,12 +40,6 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        <meta
-          name="google-site-verification"
-          content="6dGG118vQ2VeVNdeaZJZZRnTek9wjdkMJW9altDWhSE"
-        />
-      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

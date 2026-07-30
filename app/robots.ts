@@ -8,9 +8,8 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       // Next.js internals and the contact form's server-action endpoints have
       // no crawlable content.
-      disallow: ["/_next/", "/api/"],
+      disallow: [ "/api/"],
     },
     sitemap: `${site.url}/sitemap.xml`,
-    host: site.url,
   };
 }
