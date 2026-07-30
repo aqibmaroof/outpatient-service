@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.theteamrehab.com"),
+  metadataBase: new URL("https://theteamrehab.com"),
   // `template` applies to child segments only — app/page.tsx is the same
   // segment as this layout, so the home page sets its own absolute title.
   title: {
