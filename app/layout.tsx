@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   verification: {
     google: "6dGG118vQ2VeVNdeaZJZZRnTek9wjdkMJW9altDWhSE",
   },
-   alternates: { canonical: '/' },
+   alternates: { canonical: 'https://www.theteamrehab.com/' },
 };
 
 export default function RootLayout({
