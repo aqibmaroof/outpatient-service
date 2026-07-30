@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   verification: {
     google: "6dGG118vQ2VeVNdeaZJZZRnTek9wjdkMJW9altDWhSE",
   },
+   alternates: { canonical: '/' },
 };
 
 export default function RootLayout({
