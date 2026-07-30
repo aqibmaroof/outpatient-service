@@ -8,6 +8,7 @@ export const metadata = pageMetadata({
     "See how care works at Team Rehab: a comprehensive evaluation, a personalized treatment plan built around your goals, and progress tracked at every visit.",
   path: "/what-to-expect",
   image: site.infoPages["what-to-expect"].image,
+  
 });
 
 export default function Page() {

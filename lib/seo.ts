@@ -40,5 +40,6 @@ export function pageMetadata({
       // cropped to a 1200×630 OG ratio, so asserting dimensions would lie.
       images: [{ url: image, alt: `${title} — ${site.brand.name}` }],
     },
+    alternates: { canonical: path },
   };
 }
