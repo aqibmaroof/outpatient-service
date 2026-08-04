@@ -60,6 +60,7 @@ const routes: Array<{
   },
   { path: "/insurance-and-billing", priority: 0.7, changeFrequency: "yearly" },
   { path: "/home-exercise-programs", priority: 0.7, changeFrequency: "yearly" },
+  { path: "/eligibility-check", priority: 0.8, changeFrequency: "yearly" },
   { path: "/contact", priority: 0.9, changeFrequency: "yearly" },
   { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
 ];

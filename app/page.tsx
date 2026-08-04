@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   ...pageMetadata({
-    title: "Outpatient Physical Therapy in Angels Camp, CA",
+    title: "Team Rehab in Angels Camp, CA",
     description:
       "Team Rehab is an outpatient physical therapy clinic in Angels Camp, CA — orthopedic rehabilitation, post-surgical recovery, sports injury care, and balance training.",
     path: "/",

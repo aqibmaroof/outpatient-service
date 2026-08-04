@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.brand.name}`,
   },
   description:
-    "Outpatient physical therapy clinic helping you regain mobility, reduce pain, and improve your quality of life through individualized, patient-centered care.",
+    "Team Rehab therapy clinic helping you regain mobility, reduce pain, and improve your quality of life through individualized, patient-centered care.",
   verification: {
     google: "6dGG118vQ2VeVNdeaZJZZRnTek9wjdkMJW9altDWhSE",
   },

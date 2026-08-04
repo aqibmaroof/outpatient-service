@@ -52,7 +52,7 @@ export default function Home() {
       {/* Quick-access cards */}
       <section className="bg-brand-dark">
         <Container>
-          <div className="grid gap-6 py-10 md:grid-cols-2">
+          <div className="grid gap-6 py-10 md:grid-cols-2 lg:grid-cols-3">
             {site.heroCards.map((card) => (
               <HeroCard key={card.title} {...card} />
             ))}

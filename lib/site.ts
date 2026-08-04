@@ -62,13 +62,19 @@ export const site = {
     team4: u("photo-1651008376811-b90baee60c1f", 600),
   },
 
-  // Two cards that sit on the blue band under the home hero.
+  // Three cards that sit on the blue band under the home hero.
   heroCards: [
     {
       title: "Request an Appointment",
       text: "Get started on your recovery — schedule an evaluation with one of our licensed physical therapists at a time that works for you.",
       linkLabel: "Book a Visit",
       href: "/contact",
+    },
+    {
+      title: "Check Your Eligibility",
+      text: "Not sure whether team rehab is right for you? Answer a few quick questions and get a clear answer in about two minutes.",
+      linkLabel: "Start the Questionnaire",
+      href: "/eligibility-check",
     },
     {
       title: "Conditions We Treat",
@@ -283,7 +289,7 @@ export const site = {
     heading:
       "We are committed to helping individuals regain their mobility, reduce pain, and improve their quality of life.",
     paragraphs: [
-      "Our outpatient physical therapy clinic is a welcoming, patient-centered facility committed to helping individuals regain their mobility, reduce pain, and improve their quality of life. We offer a wide range of services, including orthopedic rehabilitation, post-surgical recovery, sports injury management, and balance training, all delivered in a supportive and professional environment.",
+      "Team rehab is a welcoming, patient-centered facility committed to helping individuals regain their mobility, reduce pain, and improve their quality of life. We offer a wide range of services, including orthopedic rehabilitation, post-surgical recovery, sports injury management, and balance training, all delivered in a supportive and professional environment.",
       "Our licensed physical therapists create individualized treatment plans tailored to each patient's unique needs and goals. We utilize advanced therapeutic techniques, hands-on manual therapy, and state-of-the-art equipment to support recovery and restore function. Every plan is built around you — your body, your lifestyle, and the milestones you want to reach.",
       "Whether you're recovering from an injury, managing chronic pain, or aiming to enhance your physical performance, our team is here to guide you every step of the way. We believe recovery is a partnership, and we're dedicated to helping you move better, feel stronger, and return to the activities that matter most.",
     ],
@@ -507,6 +513,7 @@ export const site = {
         heading: "GET IN TOUCH",
         links: [
           { label: "Request an Appointment", href: "/contact" },
+          { label: "Check Your Eligibility", href: "/eligibility-check" },
           { label: "Conditions We Treat", href: "/conditions-we-treat" },
           // { label: "Our Therapists", href: "/our-therapists" },
           { label: "Contact Us", href: "/contact" },
